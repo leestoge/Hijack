@@ -1,5 +1,3 @@
 # Hijack
-Hijack
 
-cheesey knob
-hello jews
+Backstory here LUL
