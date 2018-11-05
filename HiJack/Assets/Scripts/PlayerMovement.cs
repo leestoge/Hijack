@@ -224,8 +224,10 @@ public class PlayerMovement : MonoBehaviour
         if (_cmd.forwardMove == 0 && _cmd.rightMove != 0)
         {
             if (wishspeed > sideStrafeSpeed)
+            {
                 wishspeed = sideStrafeSpeed;
-            accel = sideStrafeAcceleration;
+                accel = sideStrafeAcceleration;
+            }
         }
 
         Accelerate(wishdir, wishspeed, accel);
@@ -292,9 +294,13 @@ public class PlayerMovement : MonoBehaviour
 
         // Do not apply friction if the player is queueing up the next jump
         if (!wishJump)
+        {
             ApplyFriction(1.0f);
+        }
         else
+        {
             ApplyFriction(0);
+        }
 
         SetMovementDir();
 
