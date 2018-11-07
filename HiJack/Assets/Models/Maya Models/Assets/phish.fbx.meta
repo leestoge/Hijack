@@ -1,0 +1,162 @@
+fileFormatVersion: 2
+guid: dc47776667b76804a9240685b5682e02
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: group4
+    100002: group5
+    100004: pasted__group1
+    100006: pasted__pasted__pSphere3
+    100008: pasted__pCube9
+    100010: pCube10
+    100012: pCube8
+    100014: pCube9
+    100016: pCylinder10
+    100018: pCylinder11
+    100020: pCylinder12
+    100022: pCylinder9
+    100024: //RootNode
+    100026: phish_battery
+    100028: pSphere4
+    100030: pSphere5
+    100032: pSphere7
+    100034: transform1
+    100036: transform10
+    100038: transform11
+    100040: transform12
+    100042: transform13
+    100044: transform14
+    100046: transform15
+    100048: transform2
+    100050: transform9
+    400000: group4
+    400002: group5
+    400004: pasted__group1
+    400006: pasted__pasted__pSphere3
+    400008: pasted__pCube9
+    400010: pCube10
+    400012: pCube8
+    400014: pCube9
+    400016: pCylinder10
+    400018: pCylinder11
+    400020: pCylinder12
+    400022: pCylinder9
+    400024: //RootNode
+    400026: phish_battery
+    400028: pSphere4
+    400030: pSphere5
+    400032: pSphere7
+    400034: transform1
+    400036: transform10
+    400038: transform11
+    400040: transform12
+    400042: transform13
+    400044: transform14
+    400046: transform15
+    400048: transform2
+    400050: transform9
+    2100000: blinn_blue
+    2100002: lambert_black
+    2100004: blinn2
+    2100006: lambert3
+    2100008: blinn1
+    2100010: blinn_blue_eye
+    2300000: pCylinder11
+    2300002: pCylinder12
+    2300004: phish_battery
+    2300006: pSphere7
+    3300000: pCylinder11
+    3300002: pCylinder12
+    3300004: phish_battery
+    3300006: pSphere7
+    4300000: pCylinder11
+    4300002: pCylinder12
+    4300004: phish_battery
+    4300006: pSphere7
+    6400000: pCylinder11
+    6400002: pCylinder12
+    6400004: phish_battery
+    6400006: pSphere7
+    2186277476908879412: ImportLogs
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

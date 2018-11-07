@@ -1,0 +1,220 @@
+fileFormatVersion: 2
+guid: 01bd408c04bb2824da23b33dec0075b2
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: group
+    100002: group1
+    100004: group10
+    100006: group9
+    100008: pasted__pCube10
+    100010: pasted__pCube10 1
+    100012: pasted__pSphere5
+    100014: pasted__pSphere6
+    100016: pasted__pSphere6 1
+    100018: pasted__pSphere7
+    100020: pasted__pSphere8
+    100022: pCube14
+    100024: pCube15
+    100026: pCube16
+    100028: pCube17
+    100030: pCube18
+    100032: pCube23
+    100034: pCube24
+    100036: pCube25
+    100038: pCube28
+    100040: pCube29
+    100042: pCube40
+    100044: pCube41
+    100046: pCube42
+    100048: pCube45
+    100050: pCylinder21
+    100052: pCylinder28
+    100054: pSphere6
+    100056: transform26
+    100058: transform27
+    100060: transform28
+    100062: transform29
+    100064: transform30
+    100066: transform31
+    100068: transform32
+    100070: transform33
+    100072: transform34
+    100074: transform35
+    100076: transform36
+    100078: transform37
+    100080: transform38
+    100082: transform39
+    100084: transform40
+    100086: transform41
+    100088: transform42
+    100090: transform43
+    100092: transform6
+    100094: transform7
+    100096: transform8
+    100098: //RootNode
+    100100: trojan_batteries_1
+    100102: trojan_batteries_2
+    400000: group
+    400002: group1
+    400004: group10
+    400006: group9
+    400008: pasted__pCube10
+    400010: pasted__pCube10 1
+    400012: pasted__pSphere5
+    400014: pasted__pSphere6
+    400016: pasted__pSphere6 1
+    400018: pasted__pSphere7
+    400020: pasted__pSphere8
+    400022: pCube14
+    400024: pCube15
+    400026: pCube16
+    400028: pCube17
+    400030: pCube18
+    400032: pCube23
+    400034: pCube24
+    400036: pCube25
+    400038: pCube28
+    400040: pCube29
+    400042: pCube40
+    400044: pCube41
+    400046: pCube42
+    400048: pCube45
+    400050: pCylinder21
+    400052: pCylinder28
+    400054: pSphere6
+    400056: transform26
+    400058: transform27
+    400060: transform28
+    400062: transform29
+    400064: transform30
+    400066: transform31
+    400068: transform32
+    400070: transform33
+    400072: transform34
+    400074: transform35
+    400076: transform36
+    400078: transform37
+    400080: transform38
+    400082: transform39
+    400084: transform40
+    400086: transform41
+    400088: transform42
+    400090: transform43
+    400092: transform6
+    400094: transform7
+    400096: transform8
+    400098: //RootNode
+    400100: trojan_batteries_1
+    400102: trojan_batteries_2
+    2100000: lambert_black
+    2100002: lambert2
+    2100004: blinn_green
+    2100006: blinn1
+    2100008: lambert3
+    2100010: blinn2
+    2100012: blinn_green_eye
+    2100014: pasted__lambert_black
+    2300000: pasted__pCube10
+    2300002: pCube15
+    2300004: pCube45
+    2300006: trojan_batteries_1
+    2300008: trojan_batteries_2
+    3300000: pasted__pCube10
+    3300002: pCube15
+    3300004: pCube45
+    3300006: trojan_batteries_1
+    3300008: trojan_batteries_2
+    4300000: pCube15
+    4300002: pCube45
+    4300004: trojan_batteries_2
+    4300006: pasted__pCube10
+    4300008: trojan_batteries_1
+    6400000: pasted__pCube10
+    6400002: pCube15
+    6400004: pCube45
+    6400006: trojan_batteries_1
+    6400008: trojan_batteries_2
+    2186277476908879412: ImportLogs
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,160 @@
+fileFormatVersion: 2
+guid: 537817a0db1481a4992197587ec4aca9
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: group7
+    100002: pasted__group1
+    100004: pasted__pasted__pSphere2
+    100006: pasted__pasted__pSphere4
+    100008: pasted__pasted__pSphere5
+    100010: pCube13
+    100012: pCube33
+    100014: pCube37
+    100016: pCube44
+    100018: pCylinder15
+    100020: pCylinder16
+    100022: pCylinder17
+    100024: pCylinder18
+    100026: pCylinder19
+    100028: pCylinder20
+    100030: //RootNode
+    100032: scrubber_batteries
+    100034: transform16
+    100036: transform17
+    100038: transform18
+    100040: transform19
+    100042: transform20
+    100044: transform21
+    100046: transform22
+    100048: transform23
+    100050: transform24
+    100052: transform25
+    100054: transform44
+    100056: transform45
+    400000: group7
+    400002: pasted__group1
+    400004: pasted__pasted__pSphere2
+    400006: pasted__pasted__pSphere4
+    400008: pasted__pasted__pSphere5
+    400010: pCube13
+    400012: pCube33
+    400014: pCube37
+    400016: pCube44
+    400018: pCylinder15
+    400020: pCylinder16
+    400022: pCylinder17
+    400024: pCylinder18
+    400026: pCylinder19
+    400028: pCylinder20
+    400030: //RootNode
+    400032: scrubber_batteries
+    400034: transform16
+    400036: transform17
+    400038: transform18
+    400040: transform19
+    400042: transform20
+    400044: transform21
+    400046: transform22
+    400048: transform23
+    400050: transform24
+    400052: transform25
+    400054: transform44
+    400056: transform45
+    2100000: blinn1
+    2100002: blinn_red_eye
+    2100004: lambert_black
+    2100006: blinn_red
+    2100008: blinn2
+    2100010: lambert3
+    2300000: pCube44
+    2300002: scrubber_batteries
+    3300000: pCube44
+    3300002: scrubber_batteries
+    4300000: pCube44
+    4300002: scrubber_batteries
+    6400000: pCube44
+    6400002: scrubber_batteries
+    2186277476908879412: ImportLogs
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
