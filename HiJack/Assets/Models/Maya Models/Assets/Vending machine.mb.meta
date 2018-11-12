@@ -54,6 +54,7 @@ ModelImporter:
     2100016: blinn_white
     2100018: blinn_bluescreen
     2100020: lambert1
+    2100022: blinn_vendor_screen
     2300000: pCube48
     2300002: pCube49
     2300004: pCube50
