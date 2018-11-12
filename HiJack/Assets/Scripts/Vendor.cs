@@ -5,7 +5,7 @@ public class Vendor : MonoBehaviour
 {
     public Button Button;
     public GameObject Player;
-    public GameObject canvas;
+    public GameObject canvas; // should make seperate canvas to not interfere with screen fade etc.
 
 
     private bool _triggeringPlayer;
@@ -24,7 +24,7 @@ public class Vendor : MonoBehaviour
     {
         if (_shopEnabled)
         {
-            canvas.SetActive(true);
+            canvas.SetActive(true); 
         }
         else
         {
