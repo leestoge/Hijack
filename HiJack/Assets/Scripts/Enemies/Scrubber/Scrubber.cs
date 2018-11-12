@@ -22,6 +22,8 @@ public class Scrubber : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
 	{
+        transform.LookAt(player); // acts like a crab for some reason
+
 	    if(Vector3.Distance(transform.position, player.position) > stoppingDistance)
 	    {
 	        transform.position = Vector3.MoveTowards(transform.position, player.position, speed * Time.deltaTime);
