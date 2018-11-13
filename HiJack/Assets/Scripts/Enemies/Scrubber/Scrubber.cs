@@ -22,20 +22,7 @@ public class Scrubber : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
 	{
-        transform.LookAt(player); // acts like a crab for some reason
-
-	    if(Vector3.Distance(transform.position, player.position) > stoppingDistance)
-	    {
-	        transform.position = Vector3.MoveTowards(transform.position, player.position, speed * Time.deltaTime);
-	    }
-        else if(Vector3.Distance(transform.position, player.position) < stoppingDistance && Vector3.Distance(transform.position, player.position) > retreatDistance)
-	    {
-	        transform.position = this.transform.position;
-	    }
-        else if (Vector3.Distance(transform.position, player.position) < retreatDistance)
-	    {
-	        transform.position = Vector3.MoveTowards(transform.position, player.position, -speed * Time.deltaTime);
-        }
+        Movement();
 
 	    //if (timeBetweenShots <= 0)
 	    //{
@@ -47,4 +34,22 @@ public class Scrubber : MonoBehaviour
 	    //    timeBetweenShots -= Time.deltaTime;
 	    //}
 	}
+
+    void Movement()
+    {
+        transform.LookAt(player); // acts like a crab for some reason
+
+        if (Vector3.Distance(transform.position, player.position) > stoppingDistance)
+        {
+            transform.position = Vector3.MoveTowards(transform.position, player.position, speed * Time.deltaTime);
+        }
+        else if (Vector3.Distance(transform.position, player.position) < stoppingDistance && Vector3.Distance(transform.position, player.position) > retreatDistance)
+        {
+            transform.position = this.transform.position;
+        }
+        else if (Vector3.Distance(transform.position, player.position) < retreatDistance)
+        {
+            transform.position = Vector3.MoveTowards(transform.position, player.position, -speed * Time.deltaTime);
+        }
+    }
 }
