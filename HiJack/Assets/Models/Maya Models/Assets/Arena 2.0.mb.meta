@@ -333,6 +333,11 @@ ModelImporter:
     100654: pTorus1
     100656: transform31
     100658: transform32
+    100660: pasted__pasted__pCylinder12
+    100662: pasted__pCylinder22
+    100664: pasted__pCylinder22 1
+    100666: transform33
+    100668: transform34
     400000: //RootNode
     400002: group
     400004: group1
@@ -663,6 +668,11 @@ ModelImporter:
     400654: pTorus1
     400656: transform31
     400658: transform32
+    400660: pasted__pasted__pCylinder12
+    400662: pasted__pCylinder22
+    400664: pasted__pCylinder22 1
+    400666: transform33
+    400668: transform34
     2100000: lambert1
     2100002: Blinn_black
     2100004: blinn_arena
@@ -698,6 +708,8 @@ ModelImporter:
     2100064: pasted__Blinn_black
     2100066: pasted__pasted__Blinn_black
     2100068: pasted__pasted__blinn_arena
+    2100070: blinn_metal_dark
+    2100072: blinn_metal_light
     2300000: pasted__pasted__pasted__pCube18
     2300002: pasted__pasted__pasted__pCube18 1
     2300004: pasted__pasted__pasted__pCube19
@@ -770,6 +782,8 @@ ModelImporter:
     2300138: pCylinder22
     2300140: pSphere1
     2300142: pTorus1
+    2300144: pasted__pasted__pCylinder12
+    2300146: pasted__pCylinder22
     3300000: pasted__pasted__pasted__pCube18
     3300002: pasted__pasted__pasted__pCube18 1
     3300004: pasted__pasted__pasted__pCube19
@@ -842,6 +856,8 @@ ModelImporter:
     3300138: pCylinder22
     3300140: pSphere1
     3300142: pTorus1
+    3300144: pasted__pasted__pCylinder12
+    3300146: pasted__pCylinder22
     4300000: pCylinder11
     4300002: pCylinder14
     4300004: pCylinder15
@@ -910,6 +926,8 @@ ModelImporter:
     4300130: pasted__pCylinder11
     4300132: pCylinder22
     4300134: pCube8
+    4300136: pasted__pasted__pCylinder12
+    4300138: pasted__pCylinder22
     6400000: pasted__pasted__pasted__pCube18
     6400002: pasted__pasted__pasted__pCube18 1
     6400004: pasted__pasted__pasted__pCube19
@@ -982,6 +1000,8 @@ ModelImporter:
     6400138: pCylinder22
     6400140: pSphere1
     6400142: pTorus1
+    6400144: pasted__pasted__pCylinder12
+    6400146: pasted__pCylinder22
     2186277476908879412: ImportLogs
   externalObjects: {}
   materials:
