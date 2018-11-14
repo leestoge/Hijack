@@ -16,6 +16,6 @@ public class Phish : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
 	{
-	    enemy.destination = player.transform.position; // find player
+	     enemy.destination = player.transform.position; // find player
 	}
 }
