@@ -9,13 +9,13 @@ public class Phish : MonoBehaviour
 	// Use this for initialization
 	void Start ()
 	{
-		player = GameObject.FindGameObjectWithTag("Player");
-	    enemy = GetComponent<NavMeshAgent>();
+		player = GameObject.FindGameObjectWithTag("Player"); // find player
+	    enemy = GetComponent<NavMeshAgent>(); // initialise nav mesh
 	}
 	
 	// Update is called once per frame
 	void Update ()
 	{
-	    enemy.destination = player.transform.position;
+	    enemy.destination = player.transform.position; // find player
 	}
 }
