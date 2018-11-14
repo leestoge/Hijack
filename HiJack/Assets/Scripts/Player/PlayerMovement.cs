@@ -409,6 +409,5 @@ public class PlayerMovement : MonoBehaviour
     IEnumerator waitASecond()
     {
         yield return new WaitForSeconds(1);
-        print("We wait a second :)");
     }
 }
