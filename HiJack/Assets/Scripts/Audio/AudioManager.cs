@@ -12,14 +12,14 @@ public class AudioManager : MonoBehaviour
 	{
 	    if (instance == null)
 	    {
-	        instance = this; // do not duplicate the audiomanager (and therefore the audio)
+	        instance = this; // do not duplicate the audio manager (and therefore the audio)
 	    }
 	    else
 	    {
 	        Destroy(gameObject); // destroy if duplicate
 	        return;
 	    }
-        DontDestroyOnLoad(gameObject); // keep audiomanager persistant (one audiomanager to deal with all our scenes rather than multiple)
+        DontDestroyOnLoad(gameObject); // keep audiomanager persistant (one audio manager to deal with all our scenes rather than multiple)
 
 	    foreach (var s in sounds)
 	    {
