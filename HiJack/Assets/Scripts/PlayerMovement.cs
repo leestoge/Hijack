@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using System.Collections;
 
 // Contains the command the user wishes upon the character
 struct Cmd
@@ -322,6 +323,11 @@ public class PlayerMovement : MonoBehaviour
             playerVelocity.y = jumpSpeed;
             wishJump = false;
         }
+
+        if (playerVelocity.y == jumpSpeed)
+        {
+            JumpSounds();
+        }
     }
 
     /**
@@ -383,5 +389,26 @@ public class PlayerMovement : MonoBehaviour
         ups.y = 0;
         GUI.Label(new Rect(0, 15, 400, 100), "Speed: " + Mathf.Round(ups.magnitude * 100) / 100 + "ups", style);
         GUI.Label(new Rect(0, 30, 400, 100), "Top Speed: " + Mathf.Round(playerTopVelocity * 100) / 100 + "ups", style);
+    }
+
+    private void JumpSounds()
+    {
+        var jumpvariance = new[] // array of strings
+        {
+            "Jump1",
+            "Jump2"
+        }; // array of strings called "vids" that holds the video links
+        System.Random rnd = new System.Random();
+        int range = rnd.Next(0, jumpvariance.Length);
+        string soundToPlay = jumpvariance[range];
+
+        StartCoroutine("waitASecond");
+        FindObjectOfType<AudioManager>().Play(soundToPlay);
+    }
+
+    IEnumerator waitASecond()
+    {
+        yield return new WaitForSeconds(1);
+        print("We wait a second :)");
     }
 }
