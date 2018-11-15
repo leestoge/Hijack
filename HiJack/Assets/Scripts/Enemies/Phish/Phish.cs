@@ -9,7 +9,7 @@ public class Phish : MonoBehaviour
 	// Use this for initialization
 	void Start ()
 	{
-		player = GameObject.FindGameObjectWithTag("Player"); // find player
+	    player = GameObject.FindGameObjectWithTag("Player"); // find player
 	    enemy = GetComponent<NavMeshAgent>(); // initialise nav mesh
 	}
 	
