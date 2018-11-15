@@ -55,6 +55,13 @@ ModelImporter:
     100098: //RootNode
     100100: trojan_batteries_1
     100102: trojan_batteries_2
+    100104: transform44
+    100106: transform45
+    100108: transform46
+    100110: trojan_body
+    100112: trojan_body1
+    100114: trojan_cannon
+    100116: trojan_turret
     400000: group
     400002: group1
     400004: group10
@@ -107,6 +114,13 @@ ModelImporter:
     400098: //RootNode
     400100: trojan_batteries_1
     400102: trojan_batteries_2
+    400104: transform44
+    400106: transform45
+    400108: transform46
+    400110: trojan_body
+    400112: trojan_body1
+    400114: trojan_cannon
+    400116: trojan_turret
     2100000: lambert_black
     2100002: lambert2
     2100004: blinn_green
@@ -120,21 +134,33 @@ ModelImporter:
     2300004: pCube45
     2300006: trojan_batteries_1
     2300008: trojan_batteries_2
+    2300010: trojan_body1
+    2300012: trojan_cannon
+    2300014: trojan_turret
     3300000: pasted__pCube10
     3300002: pCube15
     3300004: pCube45
     3300006: trojan_batteries_1
     3300008: trojan_batteries_2
+    3300010: trojan_body1
+    3300012: trojan_cannon
+    3300014: trojan_turret
     4300000: pCube15
     4300002: pCube45
     4300004: trojan_batteries_2
     4300006: pasted__pCube10
     4300008: trojan_batteries_1
+    4300010: trojan_cannon
+    4300012: trojan_turret
+    4300014: trojan_body1
     6400000: pasted__pCube10
     6400002: pCube15
     6400004: pCube45
     6400006: trojan_batteries_1
     6400008: trojan_batteries_2
+    6400010: trojan_body1
+    6400012: trojan_cannon
+    6400014: trojan_turret
     2186277476908879412: ImportLogs
   externalObjects: {}
   materials:

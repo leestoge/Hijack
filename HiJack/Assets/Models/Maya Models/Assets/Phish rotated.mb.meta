@@ -1,95 +1,96 @@
 fileFormatVersion: 2
-guid: 537817a0db1481a4992197587ec4aca9
+guid: a00004ad5849cfc40b377f713661a13a
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: group7
-    100002: pasted__group1
-    100004: pasted__pasted__pSphere2
-    100006: pasted__pasted__pSphere4
-    100008: pasted__pasted__pSphere5
-    100010: pCube13
-    100012: pCube33
-    100014: pCube37
-    100016: pCube44
-    100018: pCylinder15
-    100020: pCylinder16
-    100022: pCylinder17
-    100024: pCylinder18
-    100026: pCylinder19
-    100028: pCylinder20
-    100030: //RootNode
-    100032: scrubber_batteries
-    100034: transform16
-    100036: transform17
-    100038: transform18
-    100040: transform19
-    100042: transform20
-    100044: transform21
-    100046: transform22
-    100048: transform23
-    100050: transform24
-    100052: transform25
-    100054: transform44
-    100056: transform45
-    100058: pCube45
-    100060: transform46
-    100062: transform47
-    400000: group7
-    400002: pasted__group1
-    400004: pasted__pasted__pSphere2
-    400006: pasted__pasted__pSphere4
-    400008: pasted__pasted__pSphere5
-    400010: pCube13
-    400012: pCube33
-    400014: pCube37
-    400016: pCube44
-    400018: pCylinder15
-    400020: pCylinder16
-    400022: pCylinder17
-    400024: pCylinder18
-    400026: pCylinder19
-    400028: pCylinder20
-    400030: //RootNode
-    400032: scrubber_batteries
-    400034: transform16
-    400036: transform17
-    400038: transform18
-    400040: transform19
-    400042: transform20
-    400044: transform21
-    400046: transform22
-    400048: transform23
-    400050: transform24
-    400052: transform25
-    400054: transform44
-    400056: transform45
-    400058: pCube45
-    400060: transform46
-    400062: transform47
+    100000: group4
+    100002: group5
+    100004: pasted__group1
+    100006: pasted__pasted__pSphere3
+    100008: pasted__pCube9
+    100010: pCube10
+    100012: pCube8
+    100014: pCube9
+    100016: pCylinder10
+    100018: pCylinder11
+    100020: pCylinder12
+    100022: pCylinder13
+    100024: pCylinder9
+    100026: //RootNode
+    100028: phish_battery
+    100030: polySurface1
+    100032: polySurface2
+    100034: pSphere4
+    100036: pSphere5
+    100038: pSphere7
+    100040: pSphere8
+    100042: transform1
+    100044: transform10
+    100046: transform11
+    100048: transform12
+    100050: transform13
+    100052: transform14
+    100054: transform15
+    100056: transform16
+    100058: transform17
+    100060: transform18
+    100062: transform19
+    100064: transform2
+    100066: transform20
+    100068: transform9
+    400000: group4
+    400002: group5
+    400004: pasted__group1
+    400006: pasted__pasted__pSphere3
+    400008: pasted__pCube9
+    400010: pCube10
+    400012: pCube8
+    400014: pCube9
+    400016: pCylinder10
+    400018: pCylinder11
+    400020: pCylinder12
+    400022: pCylinder13
+    400024: pCylinder9
+    400026: //RootNode
+    400028: phish_battery
+    400030: polySurface1
+    400032: polySurface2
+    400034: pSphere4
+    400036: pSphere5
+    400038: pSphere7
+    400040: pSphere8
+    400042: transform1
+    400044: transform10
+    400046: transform11
+    400048: transform12
+    400050: transform13
+    400052: transform14
+    400054: transform15
+    400056: transform16
+    400058: transform17
+    400060: transform18
+    400062: transform19
+    400064: transform2
+    400066: transform20
+    400068: transform9
     2100000: blinn1
-    2100002: blinn_red_eye
-    2100004: lambert_black
-    2100006: blinn_red
+    2100002: blinn_blue
+    2100004: blinn_blue_eye
+    2100006: lambert_black
     2100008: blinn2
     2100010: lambert3
-    2100012: blinn_black
-    2300000: pCube44
-    2300002: scrubber_batteries
-    2300004: pCube45
-    2300006: //RootNode
-    3300000: pCube44
-    3300002: scrubber_batteries
-    3300004: pCube45
-    3300006: //RootNode
-    4300000: pCube44
-    4300002: scrubber_batteries
-    4300004: pCube45
-    4300006: Scrubber
-    6400000: pCube44
-    6400002: scrubber_batteries
-    6400004: pCube45
-    6400006: //RootNode
+    2300000: polySurface1
+    2300002: polySurface2
+    2300004: pSphere8
+    3300000: polySurface1
+    3300002: polySurface2
+    3300004: pSphere8
+    4300000: pSphere8
+    4300002: polySurface1
+    4300004: polySurface2
+    6400000: polySurface1
+    6400002: polySurface2
+    6400004: pSphere8
     2186277476908879412: ImportLogs
   externalObjects: {}
   materials:
@@ -130,7 +131,7 @@ ModelImporter:
     importCameras: 1
     importLights: 1
     swapUVChannels: 0
-    generateSecondaryUV: 1
+    generateSecondaryUV: 0
     useFileUnits: 1
     optimizeMeshForGPU: 1
     keepQuads: 0
