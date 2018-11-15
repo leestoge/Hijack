@@ -76,15 +76,18 @@ ModelImporter:
     2300000: pCube44
     2300002: scrubber_batteries
     2300004: pCube45
+    2300006: //RootNode
     3300000: pCube44
     3300002: scrubber_batteries
     3300004: pCube45
+    3300006: //RootNode
     4300000: pCube44
     4300002: scrubber_batteries
     4300004: pCube45
     6400000: pCube44
     6400002: scrubber_batteries
     6400004: pCube45
+    6400006: //RootNode
     2186277476908879412: ImportLogs
   externalObjects: {}
   materials:

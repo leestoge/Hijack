@@ -23,6 +23,19 @@ ModelImporter:
     100034: transform48
     100036: transform49
     100038: //RootNode
+    100040: pasted__pCube59
+    100042: pCube59
+    100044: transform50
+    100046: transform51
+    100048: transform52
+    100050: transform53
+    100052: transform54
+    100054: transform55
+    100056: transform56
+    100058: transform57
+    100060: transform58
+    100062: transform59
+    100064: transform60
     400000: pCube46
     400002: pCube48
     400004: pCube49
@@ -43,6 +56,19 @@ ModelImporter:
     400034: transform48
     400036: transform49
     400038: //RootNode
+    400040: pasted__pCube59
+    400042: pCube59
+    400044: transform50
+    400046: transform51
+    400048: transform52
+    400050: transform53
+    400052: transform54
+    400054: transform55
+    400056: transform56
+    400058: transform57
+    400060: transform58
+    400062: transform59
+    400064: transform60
     2100000: blinn_yellow
     2100002: lambert_black
     2100004: blinn_yellow_eye
@@ -55,6 +81,16 @@ ModelImporter:
     2100018: blinn_bluescreen
     2100020: lambert1
     2100022: blinn_vendor_screen
+    2100024: pasted__lambert_black
+    2100026: pasted__blinn_yellow
+    2100028: pasted__blinn_yellow_eye
+    2100030: pasted__blinn_black
+    2100032: pasted__blinn_dark_grey
+    2100034: pasted__blinn_vendor_screen
+    2100036: pasted__blinn2
+    2100038: pasted__lambert3
+    2100040: pasted__blinn_white
+    2100042: pasted__blinn_bluescreen
     2300000: pCube48
     2300002: pCube49
     2300004: pCube50
@@ -66,6 +102,8 @@ ModelImporter:
     2300016: pCube57
     2300018: pCube58
     2300020: pCylinder29
+    2300022: pasted__pCube59
+    2300024: pCube59
     3300000: pCube48
     3300002: pCube49
     3300004: pCube50
@@ -77,6 +115,8 @@ ModelImporter:
     3300016: pCube57
     3300018: pCube58
     3300020: pCylinder29
+    3300022: pasted__pCube59
+    3300024: pCube59
     4300000: pCylinder29
     4300002: pCube48
     4300004: pCube49
@@ -88,6 +128,8 @@ ModelImporter:
     4300016: pCube55
     4300018: pCube57
     4300020: pCube58
+    4300022: pasted__pCube59
+    4300024: pCube59
     6400000: pCube48
     6400002: pCube49
     6400004: pCube50
@@ -99,6 +141,8 @@ ModelImporter:
     6400016: pCube57
     6400018: pCube58
     6400020: pCylinder29
+    6400022: pasted__pCube59
+    6400024: pCube59
     2186277476908879412: ImportLogs
   externalObjects: {}
   materials:
