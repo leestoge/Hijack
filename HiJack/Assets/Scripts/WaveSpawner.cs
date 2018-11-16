@@ -22,8 +22,10 @@ public class WaveSpawner : MonoBehaviour
     public Wave[] waves;
     private int nextWave = 0; // index of next wave
 
-    public float timeBetweenWaves = 10f; // spawn time between waves (in seconds)
-    public float waveCountdown;
+    public Transform[] spawnPoints;
+
+    public float timeBetweenWaves = 5f; // spawn time between waves (in seconds)
+    private float waveCountdown;
 
     private float searchCountdown = 1f;
 
@@ -32,7 +34,12 @@ public class WaveSpawner : MonoBehaviour
 	// Use this for initialization
 	void Start ()
 	{
-	    waveCountdown = timeBetweenWaves;
+	    if (spawnPoints.Length == 0)
+	    {
+	        Debug.Log("ERROR: No spawn points referenced.");
+	    }
+
+        waveCountdown = timeBetweenWaves;
 	}
 	
 	// Update is called once per frame
@@ -122,6 +129,8 @@ public class WaveSpawner : MonoBehaviour
     {
         // Spawn enemy
         Debug.Log("Spawning enemy: " + _enemy.name);
-        Instantiate(_enemy, transform.position, transform.rotation);     
+
+        Transform _sp = spawnPoints[Random.Range(0, spawnPoints.Length)]; // randomly generate a spawnpoint between 0 and the length of spawn points
+        Instantiate(_enemy, _sp.position, _sp.rotation);     
     }
 }
