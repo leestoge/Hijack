@@ -23,7 +23,7 @@ RenderSettings:
   m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
-  m_AmbientIntensity: 1
+  m_AmbientIntensity: 2
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
   m_SkyboxMaterial: {fileID: 2100000, guid: 83415306e1278084d939ceb9ed04b380, type: 2}
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.020639028, g: 0.15846917, b: 0.12781179, a: 1}
+  m_IndirectSpecularColor: {r: 0.0010184842, g: 0.024458997, b: 0.017026221, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -13010,7 +13010,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &745902343
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20216,6 +20216,23 @@ Transform:
   m_Father: {fileID: 1240496513}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1107675420 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1115748528354114, guid: 53a48e740530ff4409ce608368c7e784,
+    type: 2}
+  m_PrefabInternal: {fileID: 1589324887}
+--- !u!114 &1107675424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1107675420}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff26db721962cdf4a8edcdfa9a767d2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  profile: {fileID: 11400000, guid: e024ebc3801f2f54dbf64c745ef3e889, type: 2}
 --- !u!1 &1108193343
 GameObject:
   m_ObjectHideFlags: 0
@@ -32422,6 +32439,16 @@ Prefab:
         type: 2}
       propertyPath: m_Radius
       value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 20486933732657962, guid: 53a48e740530ff4409ce608368c7e784,
+        type: 2}
+      propertyPath: m_RenderingPath
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 20486933732657962, guid: 53a48e740530ff4409ce608368c7e784,
+        type: 2}
+      propertyPath: m_AllowMSAA
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a48e740530ff4409ce608368c7e784, type: 2}
