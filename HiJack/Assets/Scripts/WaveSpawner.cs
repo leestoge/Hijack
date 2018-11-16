@@ -44,8 +44,7 @@ public class WaveSpawner : MonoBehaviour
 	        if (!EnemyIsAlive())
 	        {
                 // begin a new wave
-                Debug.Log("Wave completed!");
-	            return;
+                WaveCompleted();
 	        }
 	        else
 	        {
@@ -67,6 +66,24 @@ public class WaveSpawner : MonoBehaviour
 	        waveCountdown -= Time.deltaTime; // go down the appropriate amount of time for each frame
 	    }
 	}
+
+    void WaveCompleted()
+    {
+        Debug.Log("Wave completed!");
+
+        state = SpawnState.COUNTING;
+        waveCountdown = timeBetweenWaves;
+
+        if (nextWave + 1 > waves.Length - 1) // if next wave we try to spawn is > number of waves that we have
+        {
+            nextWave = 0;
+            Debug.Log("Finished waves. Looping...");
+        }
+        else
+        {
+            nextWave++; // increment up the array (and therefore change wave)
+        }      
+    }
 
     bool EnemyIsAlive()
     {
