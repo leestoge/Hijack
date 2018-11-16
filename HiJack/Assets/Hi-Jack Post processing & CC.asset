@@ -54,27 +54,27 @@ MonoBehaviour:
     m_Settings:
       reflection:
         blendType: 0
-        reflectionQuality: 2
-        maxDistance: 100
+        reflectionQuality: 0
+        maxDistance: 95
         iterationCount: 256
-        stepSize: 3
-        widthModifier: 0.5
-        reflectionBlur: 1
+        stepSize: 10
+        widthModifier: 1.5
+        reflectionBlur: 0.8
         reflectBackfaces: 0
       intensity:
-        reflectionMultiplier: 1
-        fadeDistance: 100
-        fresnelFade: 1
-        fresnelFadePower: 1
+        reflectionMultiplier: 0.6
+        fadeDistance: 110
+        fresnelFade: 0.95
+        fresnelFadePower: 0.7
       screenEdgeMask:
-        intensity: 0.03
+        intensity: 0.5
   depthOfField:
     m_Enabled: 0
     m_Settings:
       focusDistance: 10
       aperture: 5.6
       focalLength: 50
-      useCameraFov: 0
+      useCameraFov: 1
       kernelSize: 1
   motionBlur:
     m_Enabled: 0
@@ -305,10 +305,10 @@ MonoBehaviour:
       lut: {fileID: 0}
       contribution: 1
   chromaticAberration:
-    m_Enabled: 0
+    m_Enabled: 1
     m_Settings:
-      spectralTexture: {fileID: 0}
-      intensity: 0.1
+      spectralTexture: {fileID: 2800000, guid: 4a8f054acfbd08043a931cd22760758d, type: 3}
+      intensity: 0.05
   grain:
     m_Enabled: 0
     m_Settings:
