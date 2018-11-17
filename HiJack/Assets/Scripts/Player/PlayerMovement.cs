@@ -397,7 +397,7 @@ public class PlayerMovement : MonoBehaviour
         {
             "Jump1",
             "Jump2"
-        }; // array of strings called "vids" that holds the video links
+        }; // array of strings that holds the jump sound names
         System.Random rnd = new System.Random();
         int range = rnd.Next(0, jumpvariance.Length);
         string soundToPlay = jumpvariance[range];
