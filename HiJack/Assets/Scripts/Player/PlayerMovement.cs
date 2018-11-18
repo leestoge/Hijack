@@ -31,7 +31,7 @@ public class PlayerMovement : MonoBehaviour
     public float sideStrafeAcceleration = 50.0f;  // How fast acceleration occurs to get up to sideStrafeSpeed when
     public float sideStrafeSpeed = 1.0f;          // What the max speed to generate when side strafing
     public float jumpSpeed = 8.0f;                // The speed at which the character's up axis gains when hitting jump
-    public bool holdJumpToBhop = false;           // When enabled allows player to just hold jump button to keep on bhopping perfectly. Beware: smells like casual.
+    public bool holdJumpToBhop;           // When enabled allows player to just hold jump button to keep on bhopping perfectly. Beware: smells like casual.
 
     /*print() style */
     public GUIStyle style;
@@ -39,25 +39,25 @@ public class PlayerMovement : MonoBehaviour
     /*FPS Stuff */
     public float fpsDisplayRate = 4.0f; // 4 updates per sec
 
-    private int frameCount = 0;
-    private float dt = 0.0f;
-    private float fps = 0.0f;
+    private int frameCount;
+    private float dt;
+    private float fps;
 
     private CharacterController _controller;
 
     // Camera rotations
-    private float rotX = 0.0f;
-    private float rotY = 0.0f;
+    private float rotX;
+    private float rotY;
 
     private Vector3 moveDirectionNorm = Vector3.zero;
     private Vector3 playerVelocity = Vector3.zero;
-    private float playerTopVelocity = 0.0f;
+    private float playerTopVelocity;
 
     // Q3: players can queue the next jump just before he hits the ground
-    private bool wishJump = false;
+    private bool wishJump;
 
     // Used to display real time fricton values
-    private float playerFriction = 0.0f;
+    private float playerFriction;
 
     // Player commands, stores wish commands that the player asks for (Forward, back, jump, etc)
     private Cmd _cmd;
@@ -78,10 +78,10 @@ public class PlayerMovement : MonoBehaviour
         }
 
         // Put the camera inside the capsule collider
-        playerView.position = new Vector3(
-            transform.position.x,
-            transform.position.y + playerViewYOffset,
-            transform.position.z);
+        if (playerView != null)
+        {
+            playerView.position = new Vector3(transform.position.x, transform.position.y + playerViewYOffset, transform.position.z);
+        }
 
         _controller = GetComponent<CharacterController>();
     }
@@ -335,7 +335,7 @@ public class PlayerMovement : MonoBehaviour
      */
     private void ApplyFriction(float t)
     {
-        Vector3 vec = playerVelocity; // Equivalent to: VectorCopy();
+        Vector3 vec = playerVelocity;
         float speed;
         float newspeed;
         float control;
@@ -354,10 +354,16 @@ public class PlayerMovement : MonoBehaviour
 
         newspeed = speed - drop;
         playerFriction = newspeed;
+
         if (newspeed < 0)
+        {
             newspeed = 0;
+        }
+
         if (speed > 0)
+        {
             newspeed /= speed;
+        }
 
         playerVelocity.x *= newspeed;
         playerVelocity.z *= newspeed;
@@ -372,10 +378,16 @@ public class PlayerMovement : MonoBehaviour
         currentspeed = Vector3.Dot(playerVelocity, wishdir);
         addspeed = wishspeed - currentspeed;
         if (addspeed <= 0)
+        {
             return;
+        }
+
         accelspeed = accel * Time.deltaTime * wishspeed;
+
         if (accelspeed > addspeed)
+        {
             accelspeed = addspeed;
+        }
 
         playerVelocity.x += accelspeed * wishdir.x;
         playerVelocity.z += accelspeed * wishdir.z;
