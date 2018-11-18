@@ -1,9 +1,10 @@
 <h1 align="center">
-    <img src="https://i.imgur.com/jEhZF7c.png" alt="DuckyBot's logo" width="175"/>
+    <img src="https://i.imgur.com/jEhZF7c.png" alt="Hi-Jack's logo" width="175"/>
     <br>
     Hi-Jack
     <br>
-    <br>
+    <a href="https://www.codacy.com/app/leestoge/Hijack?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=leestoge/Hijack&amp;utm_campaign=Badge_Grade"><img src="https://api.codacy.com/project/badge/Grade/1e529f268bd84b1790ed913bf0727d84" alt="Code Quality" style="max-width:100%;"></a>
+
 </h1>
 
 A fast paced first person shooter game made in Unity programmed in the C# programming language.
