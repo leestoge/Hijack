@@ -18,7 +18,7 @@ public class QuantumKnife : MonoBehaviour
 	    {
             playerAnim.SetTrigger("Sword");
             nextTimeToSwing = Time.time + 1f / swingRate;
-	        FindObjectOfType<AudioManager>().Play("SwordSwing");
+	        FindObjectOfType<Animator>().Play("SwordSwing");
             Slash();
 	    }
 	}
