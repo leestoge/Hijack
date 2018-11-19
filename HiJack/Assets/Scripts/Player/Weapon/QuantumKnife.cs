@@ -6,6 +6,7 @@ public class QuantumKnife : MonoBehaviour
     public float distance; // 5 is good
     public int damage; // 10 ?
     public LayerMask myLayerMask;
+    public Animator playerAnim;
 
     public float swingRate = 1.3f;
     private float nextTimeToSwing;
@@ -15,7 +16,8 @@ public class QuantumKnife : MonoBehaviour
 	{
 	    if (Input.GetButton("Fire1") && Time.time >= nextTimeToSwing)
 	    {
-	        nextTimeToSwing = Time.time + 1f / swingRate;
+            playerAnim.SetTrigger("Sword");
+            nextTimeToSwing = Time.time + 1f / swingRate;
 	        FindObjectOfType<AudioManager>().Play("SwordSwing");
             Slash();
 	    }
