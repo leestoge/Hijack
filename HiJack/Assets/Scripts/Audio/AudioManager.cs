@@ -34,7 +34,7 @@ public class AudioManager : MonoBehaviour
 
     void Start()
     {
-        Play("Ambience"); // Play ambience on game start
+        Play("Music"); // Play ambience on game start
     }
 	
 	// Update is called once per frame
