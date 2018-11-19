@@ -2,14 +2,15 @@
 
 public class Gun : MonoBehaviour
 {
-    public float damage = 10f;
-    public float range = 100f;
-    public float fireRate = 15f;
+    public float damage = 5f;
+    public float range = 50f;
+    public float fireRate = 10f;
+    public LayerMask myLayerMask;
 
     public Camera fpsCam;
     public ParticleSystem muzzleflash;
 
-    private float nextTimeToFire = 0f;
+    private float nextTimeToFire;
 
 
 	// Update is called once per frame
@@ -26,7 +27,7 @@ public class Gun : MonoBehaviour
     {
         muzzleflash.Play();
         RaycastHit hitInfo;
-        if (Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hitInfo, range))
+        if (Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hitInfo, range, myLayerMask))
         {
             Debug.Log(hitInfo.transform.name);
 
