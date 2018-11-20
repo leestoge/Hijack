@@ -10,6 +10,8 @@ public class Gun : MonoBehaviour
 
     public Camera fpsCam;
     public ParticleSystem muzzleflash;
+    public GameObject enviornmentImpact;
+    public GameObject enemyImpact;
 
     private float nextTimeToFire;
 
@@ -21,7 +23,7 @@ public class Gun : MonoBehaviour
 
         if (Input.GetButton("Fire1"))
         {
-            playerAnim.SetTrigger("shoot");
+            
         }
 
         if (Input.GetButton("Fire1") && Time.time >= nextTimeToFire)
@@ -33,6 +35,7 @@ public class Gun : MonoBehaviour
 
     void Shoot()
     {
+        playerAnim.SetTrigger("shoot");
         muzzleflash.Play();
         RaycastHit hitInfo;
         if (Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hitInfo, range, myLayerMask))
@@ -43,6 +46,13 @@ public class Gun : MonoBehaviour
             if (target != null)
             {
                 target.TakeDamage(damage);
+                GameObject hitEnemy = Instantiate(enemyImpact, hitInfo.point, Quaternion.LookRotation(hitInfo.normal));
+                Destroy(hitEnemy, 2f);
+            }
+            else
+            {
+                GameObject impact = Instantiate(enviornmentImpact, hitInfo.point, Quaternion.LookRotation(hitInfo.normal));
+                Destroy(impact, 2f);
             }
         }
     }
