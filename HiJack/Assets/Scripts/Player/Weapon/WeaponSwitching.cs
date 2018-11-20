@@ -43,17 +43,19 @@ public class WeaponSwitching : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Alpha1)) // sword
         {
             selectedWeapon = 0;
+            FindObjectOfType<AudioManager>().Play("equipSword");
         }
 
         if (Input.GetKeyDown(KeyCode.Alpha2) && transform.childCount >=2) // gun
         {
             selectedWeapon = 1;
-            // FindObjectOfType<AudioManager>().Play("equipGun");
+            FindObjectOfType<AudioManager>().Play("equipGun");
         }
 
         if (Input.GetKeyDown(KeyCode.Alpha3) && transform.childCount >= 3) // shotgun
         {
             selectedWeapon = 2;
+            FindObjectOfType<AudioManager>().Play("equipShotgun");
         }
 
         if (Input.GetKeyDown(KeyCode.Alpha4) && transform.childCount >= 4) // ??
@@ -66,18 +68,18 @@ public class WeaponSwitching : MonoBehaviour
             SelectWeapon();
         }
 
-        if (selectedWeapon == 0)
-        {
-            // play sword unsheath?
-        }
-        if (selectedWeapon != 1) // not equal to works for some reason no idea why.
-        {
-            FindObjectOfType<AudioManager>().Play("equipGun");
-        }
-        if (selectedWeapon == 2)
-        {
-            // play shotgun thing?
-        }
+        //if (selectedWeapon != 0)
+        //{
+        //    FindObjectOfType<AudioManager>().Play("equipSword");
+        //}
+        //if (selectedWeapon != 1) // not equal to works for some reason no idea why.
+        //{
+        //    FindObjectOfType<AudioManager>().Play("equipGun");
+        //}
+        //if (selectedWeapon != 2)
+        //{
+        //    FindObjectOfType<AudioManager>().Play("equipShotgun");
+        //}
     }
 
     void SelectWeapon()

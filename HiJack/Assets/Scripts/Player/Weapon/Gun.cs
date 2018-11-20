@@ -21,11 +21,6 @@ public class Gun : MonoBehaviour
 	{
         playerAnim = GetComponent<Animator>();
 
-        if (Input.GetButton("Fire1"))
-        {
-            
-        }
-
         if (Input.GetButton("Fire1") && Time.time >= nextTimeToFire)
 	    {
 	        nextTimeToFire = Time.time + 1f / fireRate;
