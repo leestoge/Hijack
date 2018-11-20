@@ -20,7 +20,7 @@ public class WaveSpawner : MonoBehaviour
     }
 
     public Wave[] waves;
-    private int nextWave = 0; // index of next wave
+    private int nextWave; // index of next wave
 
     public Transform[] spawnPoints;
 
