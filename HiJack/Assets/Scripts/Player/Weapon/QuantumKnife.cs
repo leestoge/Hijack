@@ -19,7 +19,6 @@ public class QuantumKnife : MonoBehaviour
         if (Input.GetButton("Fire1"))
         {
             playerAnim.SetTrigger("Attack");
-            FindObjectOfType<Animator>().Play("Sword swing");
         }
 
         if (Input.GetButton("Fire1") && Time.time >= nextTimeToSwing)

@@ -20,11 +20,11 @@ public class WeaponSwitching : MonoBehaviour
         {
             if (selectedWeapon >= transform.childCount - 1)
             {
-                selectedWeapon = 0;
+                selectedWeapon = 0; // sword
             }
             else
             {
-                selectedWeapon++;
+                selectedWeapon++; // 1 - machinegun, 2 - shotgun.
             }
         }
 
@@ -40,22 +40,23 @@ public class WeaponSwitching : MonoBehaviour
             }
         }
 
-        if (Input.GetKeyDown(KeyCode.Alpha1))
+        if (Input.GetKeyDown(KeyCode.Alpha1)) // sword
         {
             selectedWeapon = 0;
         }
 
-        if (Input.GetKeyDown(KeyCode.Alpha2) && transform.childCount >=2)
+        if (Input.GetKeyDown(KeyCode.Alpha2) && transform.childCount >=2) // gun
         {
             selectedWeapon = 1;
+            // FindObjectOfType<AudioManager>().Play("equipGun");
         }
 
-        if (Input.GetKeyDown(KeyCode.Alpha3) && transform.childCount >= 3)
+        if (Input.GetKeyDown(KeyCode.Alpha3) && transform.childCount >= 3) // shotgun
         {
             selectedWeapon = 2;
         }
 
-        if (Input.GetKeyDown(KeyCode.Alpha4) && transform.childCount >= 4)
+        if (Input.GetKeyDown(KeyCode.Alpha4) && transform.childCount >= 4) // ??
         {
             selectedWeapon = 3;
         }
@@ -63,6 +64,19 @@ public class WeaponSwitching : MonoBehaviour
         if (previousSelectedWeapon != selectedWeapon)
         {
             SelectWeapon();
+        }
+
+        if (selectedWeapon == 0)
+        {
+            // play sword unsheath?
+        }
+        if (selectedWeapon != 1) // not equal to works for some reason no idea why.
+        {
+            FindObjectOfType<AudioManager>().Play("equipGun");
+        }
+        if (selectedWeapon == 2)
+        {
+            // play shotgun thing?
         }
     }
 
