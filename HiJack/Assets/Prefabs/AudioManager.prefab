@@ -9,17 +9,17 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1491870066434336}
+  m_RootGameObject: {fileID: 1565454558108576}
   m_IsPrefabAsset: 1
---- !u!1 &1491870066434336
+--- !u!1 &1565454558108576
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4334132890462042}
-  - component: {fileID: 114213896169489804}
+  - component: {fileID: 4785076055035952}
+  - component: {fileID: 114962719900171670}
   m_Layer: 0
   m_Name: AudioManager
   m_TagString: Untagged
@@ -27,12 +27,12 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4334132890462042
+--- !u!4 &4785076055035952
 Transform:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1491870066434336}
+  m_GameObject: {fileID: 1565454558108576}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -40,12 +40,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &114213896169489804
+--- !u!114 &114962719900171670
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1491870066434336}
+  m_GameObject: {fileID: 1565454558108576}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c77a944f1d18b2b4c8f857b32aa5b89d, type: 3}
@@ -58,21 +58,57 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     source: {fileID: 0}
-  - name: Ambience
-    clip: {fileID: 8300000, guid: 5dcd2c9a258cff04fba9a7d91db4cb0d, type: 3}
-    volume: 0.2
+  - name: Music
+    clip: {fileID: 8300000, guid: bfee0ba6f770b264da729413e887cdee, type: 3}
+    volume: 0.05
     pitch: 1
     loop: 1
     source: {fileID: 0}
   - name: Jump1
     clip: {fileID: 8300000, guid: f2a1084a45e783d46a75e5afcf7a1b15, type: 3}
-    volume: 1
+    volume: 0.25
     pitch: 1
     loop: 0
     source: {fileID: 0}
   - name: Jump2
     clip: {fileID: 8300000, guid: 5b802bce63250b946b0c5fe38fda632f, type: 3}
+    volume: 0.25
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: SwordSwing
+    clip: {fileID: 8300000, guid: 03758bc678ca1154e90068c321897aa3, type: 3}
     volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: equipGun
+    clip: {fileID: 8300000, guid: 1d3013a15f001194d8ab1e78f8ae6929, type: 3}
+    volume: 0.3
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: equipShotgun
+    clip: {fileID: 8300000, guid: 3f86b16e8413236438ce8b78efaf7ce8, type: 3}
+    volume: 0.3
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: equipSword
+    clip: {fileID: 8300000, guid: bfd2af4705b91cc4b8679649aabe3c9b, type: 3}
+    volume: 0.3
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: shootGun
+    clip: {fileID: 8300000, guid: 2bf67e7402efa3441a0dc88e48f12a86, type: 3}
+    volume: 0.3
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: shootShotgun
+    clip: {fileID: 8300000, guid: 429fc0d59482d304b8ee8f3c50a25c2b, type: 3}
+    volume: 0.3
     pitch: 1
     loop: 0
     source: {fileID: 0}
