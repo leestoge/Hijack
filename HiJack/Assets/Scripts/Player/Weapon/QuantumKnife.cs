@@ -14,11 +14,18 @@ public class QuantumKnife : MonoBehaviour
     // Update is called once per frame
     void Update ()
 	{
-	    if (Input.GetButton("Fire1") && Time.time >= nextTimeToSwing)
+        playerAnim = GetComponent<Animator>();
+
+        if (Input.GetButton("Fire1"))
+        {
+            playerAnim.SetTrigger("Attack");
+            FindObjectOfType<Animator>().Play("Sword swing");
+        }
+
+        if (Input.GetButton("Fire1") && Time.time >= nextTimeToSwing)
 	    {
-            playerAnim.SetTrigger("Sword");
             nextTimeToSwing = Time.time + 1f / swingRate;
-	        FindObjectOfType<Animator>().Play("SwordSwing");
+	        FindObjectOfType<AudioManager>().Play("SwordSwing");
             Slash();
 	    }
 	}

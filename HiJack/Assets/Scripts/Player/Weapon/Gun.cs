@@ -6,6 +6,7 @@ public class Gun : MonoBehaviour
     public float range = 50f;
     public float fireRate = 10f;
     public LayerMask myLayerMask;
+    public Animator playerAnim;
 
     public Camera fpsCam;
     public ParticleSystem muzzleflash;
@@ -16,7 +17,15 @@ public class Gun : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
 	{
-	    if (Input.GetButton("Fire1") && Time.time >= nextTimeToFire)
+        playerAnim = GetComponent<Animator>();
+
+        if (Input.GetButton("Fire1"))
+        {
+            playerAnim.SetTrigger("Attack");
+            FindObjectOfType<Animator>().Play("Sword swing");
+        }
+
+        if (Input.GetButton("Fire1") && Time.time >= nextTimeToFire)
 	    {
 	        nextTimeToFire = Time.time + 1f / fireRate;
 	        Shoot();
