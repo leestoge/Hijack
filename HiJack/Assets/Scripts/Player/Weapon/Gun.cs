@@ -21,8 +21,7 @@ public class Gun : MonoBehaviour
 
         if (Input.GetButton("Fire1"))
         {
-            playerAnim.SetTrigger("Attack");
-            FindObjectOfType<Animator>().Play("Sword swing");
+            playerAnim.SetTrigger("shoot");
         }
 
         if (Input.GetButton("Fire1") && Time.time >= nextTimeToFire)
