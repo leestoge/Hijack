@@ -2,23 +2,22 @@
 
 public class EnemyAttack : MonoBehaviour
 {
-    private Animator _animator;
     private GameObject _player;
     private bool _collidedWithPlayer;
 
     void Awake()
     {
         _player = GameObject.FindGameObjectWithTag("Player");
-        _animator = GetComponent<Animator>();
     }
 
     void OnTriggerEnter(Collider other)
     {
         if (other.gameObject == _player)
         {
-            _animator.SetBool("IsNearPlayer", true);
-        }
-        print("enter trigger with _player");
+            print("enter trigger with _player");
+            _collidedWithPlayer = true;
+            print("attempting to do damage");
+        }    
     }
 
     void OnCollisionEnter(Collision other)
@@ -43,9 +42,9 @@ public class EnemyAttack : MonoBehaviour
     {
         if (other.gameObject == _player)
         {
-            _animator.SetBool("IsNearPlayer", false);
-        }
-        print("exit trigger with _player");
+            print("exit trigger with _player");
+            _collidedWithPlayer = false;
+        }      
     }
 
     private void Attack()
