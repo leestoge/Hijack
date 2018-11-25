@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class targetPhish : MonoBehaviour
 {
-    public float health = 100f;
+    public float health = 50f;
 
     public void TakeDamage(float amount)
     {
