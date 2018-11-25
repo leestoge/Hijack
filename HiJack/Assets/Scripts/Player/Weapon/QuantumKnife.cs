@@ -8,6 +8,9 @@ public class QuantumKnife : MonoBehaviour
     public LayerMask myLayerMask;
     public Animator playerAnim;
 
+    public GameObject enviornmentImpact;
+    public GameObject enemyImpact;
+
     public float swingRate = 1.3f;
     private float nextTimeToSwing;
 
@@ -15,11 +18,6 @@ public class QuantumKnife : MonoBehaviour
     void Update ()
 	{
         playerAnim = GetComponent<Animator>();
-
-        if (Input.GetButton("Fire1"))
-        {
-            playerAnim.SetTrigger("Attack");
-        }
 
         if (Input.GetButton("Fire1") && Time.time >= nextTimeToSwing)
 	    {
@@ -31,6 +29,7 @@ public class QuantumKnife : MonoBehaviour
 
     void Slash()
     {
+        playerAnim.SetTrigger("Attack");
         RaycastHit hitInfo;
         if (Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hitInfo, distance, myLayerMask))
         {
@@ -40,8 +39,14 @@ public class QuantumKnife : MonoBehaviour
             if (target != null)
             {
                 target.TakeDamage(damage);
+                GameObject hitEnemy = Instantiate(enemyImpact, hitInfo.point, Quaternion.LookRotation(hitInfo.normal));
+                Destroy(hitEnemy, 2f);
             }
-
+            else
+            {
+                GameObject impact = Instantiate(enviornmentImpact, hitInfo.point, Quaternion.LookRotation(hitInfo.normal));
+                Destroy(impact, 2f);
+            }
         }
     }
 }
