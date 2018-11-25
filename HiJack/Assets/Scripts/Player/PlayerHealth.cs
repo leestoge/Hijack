@@ -4,7 +4,7 @@ using UnityEngine.Experimental.UIElements;
 public class PlayerHealth : MonoBehaviour
 {
     public Slider HealthBar;
-    public float Health = 100;
+    public float Health = 100f;
 
     private float _currentHealth;
 
