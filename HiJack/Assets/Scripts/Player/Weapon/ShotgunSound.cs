@@ -1,8 +1,7 @@
 ﻿using UnityEngine;
 
-public class ShotgunSound : MonoBehaviour {
-
-	
+public class ShotgunSound : MonoBehaviour
+{	
 	// Update is called once per frame
 	void Update ()
 	{
