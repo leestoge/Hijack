@@ -6,6 +6,7 @@ public class PlayerHealth : MonoBehaviour
     public Slider HealthBar;
     public float maxHealth = 100f;
     public ParticleSystem bleed;
+    public RectTransform gameOverPanel;
 
     private float _currentHealth;
 
@@ -27,9 +28,17 @@ public class PlayerHealth : MonoBehaviour
         int range = rnd.Next(0, damageSounds.Length);
         string soundToPlay = damageSounds[range];
 
-        FindObjectOfType<AudioManager>().Play(soundToPlay);
-
-        bleed.Play();
+        if (_currentHealth > 0)
+        {
+            FindObjectOfType<AudioManager>().Play(soundToPlay);
+            bleed.Play();
+        }
+        else
+        {
+            FindObjectOfType<AudioManager>().Play("playerDeath");
+            Time.timeScale = 0f;
+            gameOverPanel.gameObject.SetActive(true);
+        }
 
         _currentHealth -= damage;
         HealthBar.value = _currentHealth;
