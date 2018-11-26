@@ -15,9 +15,8 @@ public class targetPhish : MonoBehaviour
     }
 
     void Die()
-    {
-        // play particle?
-        deathParticles.Play();
-        Destroy(gameObject, 1f);
+    {     
+        deathParticles.Play(); // play particle
+        Destroy(gameObject, 1f); // delay destroy by 1 second
     }
 }
