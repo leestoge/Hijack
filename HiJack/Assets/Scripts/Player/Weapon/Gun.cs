@@ -37,7 +37,7 @@ public class Gun : MonoBehaviour
         {
             Debug.Log(hitInfo.transform.name);
 
-            targetPhish target = hitInfo.transform.GetComponent<targetPhish>();
+            Phish target = hitInfo.transform.GetComponent<Phish>();
             if (target != null)
             {
                 target.TakeDamage(damage);
