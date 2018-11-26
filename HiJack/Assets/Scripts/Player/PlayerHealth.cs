@@ -5,6 +5,7 @@ public class PlayerHealth : MonoBehaviour
 {
     public Slider HealthBar;
     public float maxHealth = 100f;
+    public ParticleSystem bleed;
 
     private float _currentHealth;
 
@@ -27,6 +28,8 @@ public class PlayerHealth : MonoBehaviour
         string soundToPlay = damageSounds[range];
 
         FindObjectOfType<AudioManager>().Play(soundToPlay);
+
+        bleed.Play();
 
         _currentHealth -= damage;
         HealthBar.value = _currentHealth;
