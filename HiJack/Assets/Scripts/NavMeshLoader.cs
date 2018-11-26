@@ -7,6 +7,9 @@ public class NavMeshLoader : MonoBehaviour
 
     void Start()
     {
+        // PLAY MUSIC
+        FindObjectOfType<AudioManager>().Play("inGameMusic");
+
         // UPDATE NAVMESH
         surface.BuildNavMesh();
         Debug.Log("NAVMESH UPDATED.");
