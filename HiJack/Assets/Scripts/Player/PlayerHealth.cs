@@ -15,6 +15,22 @@ public class PlayerHealth : MonoBehaviour
         _currentHealth = maxHealth;
     }
 
+    void Update()
+    {
+        // DEBUGGING
+
+        if (Input.GetKeyDown(KeyCode.T))
+        {
+            TakeDamage(1);
+        }
+    }
+
+    public void GainHealth(float amount)
+    {
+        _currentHealth += amount;
+        HealthBar.value = _currentHealth;
+    }
+
     public void TakeDamage(float damage)
     {
         var damageSounds = new[]
