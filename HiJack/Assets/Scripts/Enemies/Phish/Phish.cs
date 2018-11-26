@@ -35,6 +35,6 @@ public class Phish : MonoBehaviour
     {
         enemy.Stop();
         deathParticles.Play(); // play particle
-        Destroy(gameObject, 1f); // delay destroy by 1 second
+        Destroy(gameObject, 0.5f); // delay destroy by 1 second
     }
 }
