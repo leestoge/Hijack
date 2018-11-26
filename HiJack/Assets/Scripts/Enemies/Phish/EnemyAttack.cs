@@ -2,29 +2,39 @@
 
 public class EnemyAttack : MonoBehaviour
 {
-    private GameObject player;
+    private GameObject _player;
+    private bool _collidedWithPlayer;
 
     void Awake()
     {
-        player = GameObject.FindGameObjectWithTag("Player");
+        _player = GameObject.FindGameObjectWithTag("Player");
     }
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject == player)
+        if (other.gameObject == _player)
         {
             print("enter trigger with _player");
            Attack();
             print("attempting to do damage");
-        }
+        }    
+    }
+
+    void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject == _player)
+        {
+            print("exit trigger with _player");
+            _collidedWithPlayer = false;
+        }      
     }
 
     private void Attack()
     {
-        PlayerHealth playerDamage = player.GetComponent<PlayerHealth>();
+        PlayerHealth playerDamage = _player.GetComponent<PlayerHealth>();
         if (playerDamage != null)
         {
-            playerDamage.TakeDamage(5f);
+            playerDamage.TakeDamage(10f);
         }
     }
 }
