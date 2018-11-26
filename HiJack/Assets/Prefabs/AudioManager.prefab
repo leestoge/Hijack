@@ -58,7 +58,7 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     source: {fileID: 0}
-  - name: Music
+  - name: inGameMusic
     clip: {fileID: 8300000, guid: bfee0ba6f770b264da729413e887cdee, type: 3}
     volume: 0.05
     pitch: 1
@@ -111,4 +111,34 @@ MonoBehaviour:
     volume: 0.3
     pitch: 1
     loop: 0
+    source: {fileID: 0}
+  - name: Damage1
+    clip: {fileID: 8300000, guid: cdff395b85ecde74dbc2b4c2226ee1e3, type: 3}
+    volume: 0.25
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Damage2
+    clip: {fileID: 8300000, guid: 7301984761a0acc42b3067b88f91a459, type: 3}
+    volume: 0.25
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Damage3
+    clip: {fileID: 8300000, guid: 167f467f19fa0f34cbbf69b3165ce7f3, type: 3}
+    volume: 0.25
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Damage4
+    clip: {fileID: 8300000, guid: 69a7589221186e74ca41f9a1bfc25013, type: 3}
+    volume: 0.25
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: menuMusic
+    clip: {fileID: 8300000, guid: 862143bb693d80548bd3f47e13854009, type: 3}
+    volume: 0.1
+    pitch: 1
+    loop: 1
     source: {fileID: 0}

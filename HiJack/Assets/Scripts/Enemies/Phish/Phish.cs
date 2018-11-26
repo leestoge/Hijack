@@ -6,8 +6,11 @@ public class Phish : MonoBehaviour
     private GameObject player;
     private NavMeshAgent enemy;
 
-	// Use this for initialization
-	void Start ()
+    public float health = 50f;
+    public ParticleSystem deathParticles;
+
+    // Use this for initialization
+    void Start ()
 	{
 	    player = GameObject.FindGameObjectWithTag("Player"); // find player
 	    enemy = GetComponent<NavMeshAgent>(); // initialise nav mesh
@@ -16,6 +19,22 @@ public class Phish : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
 	{
-	     enemy.destination = player.transform.position; // find player
+	    enemy.destination = player.transform.position; // find player
 	}
+
+    public void TakeDamage(float amount)
+    {
+        health -= amount;
+        if (health < 0f)
+        {
+            Die();
+        }
+    }
+
+    void Die()
+    {
+        enemy.Stop();
+        deathParticles.Play(); // play particle
+        Destroy(gameObject, 1f); // delay destroy by 1 second
+    }
 }
