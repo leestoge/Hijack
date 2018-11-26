@@ -67,19 +67,6 @@ public class WeaponSwitching : MonoBehaviour
         {
             SelectWeapon();
         }
-
-        //if (selectedWeapon != 0)
-        //{
-        //    FindObjectOfType<AudioManager>().Play("equipSword");
-        //}
-        //if (selectedWeapon != 1) // not equal to works for some reason no idea why.
-        //{
-        //    FindObjectOfType<AudioManager>().Play("equipGun");
-        //}
-        //if (selectedWeapon != 2)
-        //{
-        //    FindObjectOfType<AudioManager>().Play("equipShotgun");
-        //}
     }
 
     void SelectWeapon()
