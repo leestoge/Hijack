@@ -24,7 +24,7 @@ public class EnemyAttack : MonoBehaviour
         PlayerHealth playerDamage = player.GetComponent<PlayerHealth>();
         if (playerDamage != null)
         {
-            playerDamage.TakeDamage(5f);
+            playerDamage.TakeDamage(5f); // reduced damage to 5
         }
     }
 }
