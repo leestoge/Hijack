@@ -1,9 +1,9 @@
-﻿using System.Collections;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class targetPhish : MonoBehaviour
 {
     public float health = 50f;
+    public ParticleSystem deathParticles;
 
     public void TakeDamage(float amount)
     {
@@ -16,6 +16,8 @@ public class targetPhish : MonoBehaviour
 
     void Die()
     {
-        Destroy(gameObject);
+        // play particle?
+        deathParticles.Play();
+        Destroy(gameObject, 1f);
     }
 }
