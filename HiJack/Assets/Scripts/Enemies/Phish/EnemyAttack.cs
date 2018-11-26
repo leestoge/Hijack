@@ -13,9 +13,7 @@ public class EnemyAttack : MonoBehaviour
     {
         if (other.gameObject == player)
         {
-            print("enter trigger with _player");
            Attack();
-            print("attempting to do damage");
         }
     }
 
