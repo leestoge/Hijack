@@ -18,10 +18,17 @@ public class BluePickup : MonoBehaviour
             PlayerHealth playerHealthies = player.GetComponent<PlayerHealth>();
             if (playerHealthies != null)
             {
-                FindObjectOfType<AudioManager>().Play("pickupHealth");
-                pickupParticle.Play();
-                playerHealthies.GainHealth(10);
-                Destroy(gameObject, 1.5f);
+                if (playerHealthies.currentHealth >= 100f)
+                {
+                    return;
+                }
+                if (playerHealthies.currentHealth <= 90f)
+                {
+                    FindObjectOfType<AudioManager>().Play("pickupHealth");
+                    pickupParticle.Play();
+                    playerHealthies.GainHealth(10);
+                    Destroy(gameObject, 1.5f);
+                }
             }
         }
     }
