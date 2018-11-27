@@ -52,9 +52,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sounds:
-  - name: PlayerDeath
+  - name: playerDeath
     clip: {fileID: 8300000, guid: 468887118b28fba41bf543943f4c2f8a, type: 3}
-    volume: 1
+    volume: 0.4
     pitch: 1
     loop: 0
     source: {fileID: 0}
@@ -78,7 +78,7 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: SwordSwing
     clip: {fileID: 8300000, guid: 03758bc678ca1154e90068c321897aa3, type: 3}
-    volume: 1
+    volume: 0.4
     pitch: 1
     loop: 0
     source: {fileID: 0}
@@ -141,4 +141,10 @@ MonoBehaviour:
     volume: 0.1
     pitch: 1
     loop: 1
+    source: {fileID: 0}
+  - name: pickupHealth
+    clip: {fileID: 8300000, guid: 9b58fd7a7e2cf104daf9fff2490f5bd9, type: 3}
+    volume: 0.4
+    pitch: 1
+    loop: 0
     source: {fileID: 0}
