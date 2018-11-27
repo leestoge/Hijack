@@ -802,6 +802,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1586108523326374
+GameObject:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4400644472223184}
+  m_Layer: 9
+  m_Name: DamagedPlayer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1586449414677846
 GameObject:
   m_ObjectHideFlags: 1
@@ -1247,7 +1262,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1925923839007070
 GameObject:
   m_ObjectHideFlags: 1
@@ -1878,7 +1893,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4261904071183576}
-  - {fileID: 4763856890399086}
+  - {fileID: 4400644472223184}
   m_Father: {fileID: 4377022311340344}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1962,6 +1977,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 4460833157869290}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4400644472223184
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1586108523326374}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: -0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4763856890399086}
+  m_Father: {fileID: 4343890224048836}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4407167894023096
 Transform:
@@ -2368,7 +2397,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1440877665449746}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: -0.16999972, z: 0.065}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -2376,8 +2405,8 @@ Transform:
   - {fileID: 4921867249927376}
   - {fileID: 4217344817524338}
   - {fileID: 4757944327235790}
-  m_Father: {fileID: 4343890224048836}
-  m_RootOrder: 1
+  m_Father: {fileID: 4400644472223184}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4764801196520252
 Transform:
@@ -3051,6 +3080,7 @@ MonoBehaviour:
   maxHealth: 100
   bleed: {fileID: 198452945920350368}
   gameOverPanel: {fileID: 0}
+  currentHealth: 0
 --- !u!114 &114350692203319294
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3206,7 +3236,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fpsCam: {fileID: 20914041526514020}
   distance: 5
-  damage: 20
+  damage: 100
   myLayerMask:
     serializedVersion: 2
     m_Bits: 311
@@ -15495,7 +15525,7 @@ ParticleSystem:
   LightsModule:
     enabled: 1
     ratio: 1
-    light: {fileID: 0}
+    light: {fileID: 108000013609061350, guid: fa35d75604d172d48b7a6b62a07c7dbf, type: 2}
     randomDistribution: 0
     color: 1
     range: 0
@@ -19968,7 +19998,7 @@ ParticleSystem:
   LightsModule:
     enabled: 1
     ratio: 1
-    light: {fileID: 0}
+    light: {fileID: 108000013609061350, guid: fa35d75604d172d48b7a6b62a07c7dbf, type: 2}
     randomDistribution: 0
     color: 1
     range: 0
@@ -30028,7 +30058,7 @@ ParticleSystemRenderer:
   m_MaxParticleSize: 0.5
   m_CameraVelocityScale: 0
   m_VelocityScale: 0
-  m_LengthScale: 2
+  m_LengthScale: 1
   m_SortingFudge: 0
   m_NormalDirection: 1
   m_RenderAlignment: 0
@@ -30037,7 +30067,7 @@ ParticleSystemRenderer:
   m_EnableGPUInstancing: 0
   m_ApplyActiveColorSpace: 0
   m_VertexStreams: 000102030405
-  m_Mesh: {fileID: 0}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
   m_Mesh1: {fileID: 0}
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
