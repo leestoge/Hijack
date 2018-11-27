@@ -1,8 +1,16 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerPoints : MonoBehaviour
 {
     public int Points;
-    
-    // if kill enemy, points + whatever
+    /*public float points = 0;
+    public Text pointsText;
+    Phish phishScript = player.GetComponent<Phish>();
+
+    void Update()
+    {
+        Points = Points + 50;
+        pointsText.text = Points.ToString();
+    } */
 }
