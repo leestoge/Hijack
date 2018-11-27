@@ -10,7 +10,7 @@ public class Phish : MonoBehaviour
     public float health = 50f;
     public ParticleSystem deathParticles;
     public GameObject bluePickup;
-    System.Random rnd = new System.Random();
+    readonly System.Random rnd = new System.Random();
     
 
     // Use this for initialization
@@ -42,7 +42,7 @@ public class Phish : MonoBehaviour
         enemy.Stop();
         DropPickup();
         deathParticles.Play(); // play particle
-        Destroy(gameObject, 0.5f); // delay destroy by 1 second
+        Destroy(gameObject, 0.5f); // delay destroy by half a second
     }
 
     void DropPickup()
