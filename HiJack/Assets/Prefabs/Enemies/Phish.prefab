@@ -863,7 +863,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1071105428229228}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.600634, y: 9.43057, z: 35.13053}
+  m_LocalPosition: {x: -9.255214, y: 9.43057, z: 26.837223}
   m_LocalScale: {x: 2.2, y: 2.2, z: 2.2}
   m_Children:
   - {fileID: 4995354043302352}
@@ -1545,6 +1545,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 50
   deathParticles: {fileID: 198568936024506806}
+  bluePickup: {fileID: 1865218023297774, guid: 59e51e1c7f5cccf4cbf5272204357c85, type: 2}
 --- !u!195 &195852917831098050
 NavMeshAgent:
   m_ObjectHideFlags: 1

@@ -8,6 +8,7 @@ public class Phish : MonoBehaviour
 
     public float health = 50f;
     public ParticleSystem deathParticles;
+    public GameObject bluePickup;
 
     // Use this for initialization
     void Start ()
@@ -34,6 +35,7 @@ public class Phish : MonoBehaviour
     void Die()
     {
         enemy.Stop();
+        Instantiate(bluePickup, transform.position, Quaternion.identity);
         deathParticles.Play(); // play particle
         Destroy(gameObject, 0.5f); // delay destroy by 1 second
     }
