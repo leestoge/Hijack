@@ -35,7 +35,7 @@ public class Phish : MonoBehaviour
     void Die()
     {
         enemy.Stop();
-        Instantiate(bluePickup, transform.position, Quaternion.identity);
+        Instantiate(bluePickup, transform.localPosition + (transform.transform.up * 1), Quaternion.identity);
         deathParticles.Play(); // play particle
         Destroy(gameObject, 0.5f); // delay destroy by 1 second
     }
