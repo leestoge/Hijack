@@ -8,11 +8,11 @@ public class PlayerHealth : MonoBehaviour
     public ParticleSystem bleed;
     public RectTransform gameOverPanel;
 
-    private float _currentHealth;
+    public float currentHealth;
 
     void Start()
     {
-        _currentHealth = maxHealth;
+        currentHealth = maxHealth;
     }
 
     void Update()
@@ -27,8 +27,8 @@ public class PlayerHealth : MonoBehaviour
 
     public void GainHealth(float amount)
     {
-        _currentHealth += amount;
-        HealthBar.value = _currentHealth;
+        currentHealth += amount;
+        HealthBar.value = currentHealth;
     }
 
     public void TakeDamage(float damage)
@@ -44,7 +44,7 @@ public class PlayerHealth : MonoBehaviour
         int range = rnd.Next(0, damageSounds.Length);
         string soundToPlay = damageSounds[range];
 
-        if (_currentHealth > 0)
+        if (currentHealth > 0)
         {
             FindObjectOfType<AudioManager>().Play(soundToPlay);
             bleed.Play();
@@ -56,7 +56,7 @@ public class PlayerHealth : MonoBehaviour
             gameOverPanel.gameObject.SetActive(true);
         }
 
-        _currentHealth -= damage;
-        HealthBar.value = _currentHealth;
+        currentHealth -= damage;
+        HealthBar.value = currentHealth;
     }
 }
