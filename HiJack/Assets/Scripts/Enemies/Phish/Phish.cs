@@ -43,6 +43,7 @@ public class Phish : MonoBehaviour
         DropPickup();
         deathParticles.Play(); // play particle
         Destroy(gameObject, 0.5f); // delay destroy by half a second
+        FindObjectOfType<PlayerPoints>().AwardPhishKill();
     }
 
     void DropPickup()

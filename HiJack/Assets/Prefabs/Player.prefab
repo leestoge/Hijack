@@ -3282,6 +3282,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Points: 100
+  phishReward: 10
 --- !u!136 &136180901347378590
 CapsuleCollider:
   m_ObjectHideFlags: 1

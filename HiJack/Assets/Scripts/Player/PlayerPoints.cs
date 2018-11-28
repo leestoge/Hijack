@@ -1,16 +1,15 @@
 ﻿using UnityEngine;
-using UnityEngine.UI;
 
 public class PlayerPoints : MonoBehaviour
 {
-    public int Points;
-    /*public float points = 0;
-    public Text pointsText;
-    Phish phishScript = player.GetComponent<Phish>();
+    public int Points; // set in the unity editor
+    public int phishReward; // set in the unity editor
+    // some variable to link to the ui element
 
-    void Update()
+    public void AwardPhishKill()
     {
-        Points = Points + 50;
-        pointsText.text = Points.ToString();
-    } */
+        Points += phishReward; // points + the set reward
+
+        // update ui element?
+    }
 }
