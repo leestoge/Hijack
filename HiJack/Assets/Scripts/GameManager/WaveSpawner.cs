@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class WaveSpawner : MonoBehaviour
 {
@@ -22,12 +23,15 @@ public class WaveSpawner : MonoBehaviour
     public Wave[] waves;
     private int nextWave; // index of next wave
 
+
     public Transform[] spawnPoints;
 
     public float timeBetweenWaves = 5f; // spawn time between waves (in seconds)
     private float waveCountdown;
 
     private float searchCountdown = 1f;
+
+    public Text HUD_element; // variable to link to the ui element
 
     private SpawnState state = SpawnState.COUNTING;
 
@@ -40,6 +44,8 @@ public class WaveSpawner : MonoBehaviour
 	    }
 
         waveCountdown = timeBetweenWaves;
+
+	    HUD_element.text = "Wave: " + nextWave;
 	}
 	
 	// Update is called once per frame
@@ -72,7 +78,9 @@ public class WaveSpawner : MonoBehaviour
 	    {
 	        waveCountdown -= Time.deltaTime; // go down the appropriate amount of time for each frame
 	    }
-	}
+
+	    HUD_element.text = "Wave: " + nextWave;
+    }
 
     void WaveCompleted()
     {
