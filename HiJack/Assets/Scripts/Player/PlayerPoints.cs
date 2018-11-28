@@ -1,15 +1,21 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerPoints : MonoBehaviour
 {
     public int Points; // set in the unity editor
     public int phishReward; // set in the unity editor
-    // some variable to link to the ui element
+    public Text HUD_element; // variable to link to the ui element
+
+    void Start()
+    {
+        HUD_element.text = Points.ToString();
+    }
 
     public void AwardPhishKill()
     {
         Points += phishReward; // points + the set reward
 
-        // update ui element?
+        HUD_element.text = Points.ToString(); // update ui element
     }
 }
