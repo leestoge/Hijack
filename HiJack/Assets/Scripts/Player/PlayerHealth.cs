@@ -7,6 +7,7 @@ public class PlayerHealth : MonoBehaviour
     public float maxHealth = 100f;
     public ParticleSystem bleed;
     public RectTransform gameOverPanel;
+    System.Random rnd = new System.Random();
 
     public float currentHealth;
 
@@ -40,7 +41,7 @@ public class PlayerHealth : MonoBehaviour
             "Damage3",
             "Damage4"
         }; // array of strings that holds the damage sound names
-        System.Random rnd = new System.Random();
+        
         int range = rnd.Next(0, damageSounds.Length);
         string soundToPlay = damageSounds[range];
 
