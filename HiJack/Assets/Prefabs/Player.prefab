@@ -3281,8 +3281,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: faecf55d94a63a9449f332689e2785f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Points: 100
+  Points: 0
   phishReward: 10
+  HUD_element: {fileID: 0}
 --- !u!136 &136180901347378590
 CapsuleCollider:
   m_ObjectHideFlags: 1
