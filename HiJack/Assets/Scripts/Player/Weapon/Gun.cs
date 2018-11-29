@@ -2,9 +2,9 @@
 
 public class Gun : MonoBehaviour
 {
-    public float damage = 5f;
-    public float range = 50f;
-    public float fireRate = 10f;
+    public float damage;
+    public float range;
+    public float fireRate;
     public LayerMask myLayerMask;
     public Animator playerAnim;
 
@@ -42,12 +42,12 @@ public class Gun : MonoBehaviour
             {
                 target.TakeDamage(damage);
                 GameObject hitEnemy = Instantiate(enemyImpact, hitInfo.point, Quaternion.LookRotation(hitInfo.normal));
-                Destroy(hitEnemy, 2f);
+                Destroy(hitEnemy, 0.5f);
             }
             else
             {
                 GameObject impact = Instantiate(enviornmentImpact, hitInfo.point, Quaternion.LookRotation(hitInfo.normal));
-                Destroy(impact, 2f);
+                Destroy(impact, 0.5f);
             }
         }
     }
