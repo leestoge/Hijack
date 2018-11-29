@@ -19,7 +19,7 @@ public class MachineGun : MonoBehaviour
     private float nextTimeToFire;
     private int framesBeforeNextShot; // to delay the sound to fix lag increment this
     private int currentShotFrame;
-#endregion
+    #endregion
 
     // Update is called once per frame
     void Update()
