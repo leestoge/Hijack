@@ -50,5 +50,6 @@ public class Gun : MonoBehaviour
                 Destroy(impact, 0.5f);
             }
         }
+        FindObjectOfType<AudioManager>().Play("shootShotgun");
     }
 }
