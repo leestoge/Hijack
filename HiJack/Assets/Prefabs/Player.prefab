@@ -3259,7 +3259,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Points: 0
-  phishReward: 10
+  phishReward: 25
   HUD_element: {fileID: 0}
 --- !u!136 &136765997635370406
 CapsuleCollider:
