@@ -31,7 +31,8 @@ public class WaveSpawner : MonoBehaviour
 
     private float searchCountdown = 1f;
 
-    public Text HUD_element; // variable to link to the ui element
+    public Text HUD_Wave_element; // variable to link to the ui element
+    public Text HUD_Enemy_element;
 
     private SpawnState state = SpawnState.COUNTING;
 
@@ -45,8 +46,8 @@ public class WaveSpawner : MonoBehaviour
 
         waveCountdown = timeBetweenWaves;
 
-	    HUD_element.text = "Wave: " + nextWave;
-	}
+	    HUD_Wave_element.text = "Wave:" + nextWave;
+    }
 	
 	// Update is called once per frame
 	void Update ()
@@ -79,7 +80,7 @@ public class WaveSpawner : MonoBehaviour
 	        waveCountdown -= Time.deltaTime; // go down the appropriate amount of time for each frame
 	    }
 
-	    HUD_element.text = "Wave: " + nextWave;
+	    HUD_Wave_element.text = "Wave:" + nextWave;
     }
 
     void WaveCompleted()
@@ -129,8 +130,8 @@ public class WaveSpawner : MonoBehaviour
 
         state = SpawnState.WAITING;
 
-
-        yield break; // return nothing as IEnumerator MUST return something.
+        HUD_Enemy_element.text = _wave.count.ToString();
+        yield break; // return nothing as IEnumerator MUST return something.  
     }
 
     void SpawnEnemy(Transform _enemy)
