@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 using UnityEngine.AI;
 
 public class Phish : MonoBehaviour
@@ -51,7 +52,8 @@ public class Phish : MonoBehaviour
         int dropChance = rnd.Next(1, 3);
         if (dropChance != 1) // if "drop chance" is not equal to 1 then proceed
         {
-            Instantiate(bluePickup, transform.localPosition + (transform.transform.up * 1), Quaternion.identity);
+            var drop = Instantiate(bluePickup, transform.localPosition + (transform.transform.up * 1), Quaternion.identity);
+            Destroy(drop, 60);
         }
     }
 }
