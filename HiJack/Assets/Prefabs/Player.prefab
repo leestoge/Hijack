@@ -201,7 +201,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4056991725653154}
   - component: {fileID: 95031673075299732}
-  - component: {fileID: 114542700527171704}
   - component: {fileID: 114284148409240966}
   m_Layer: 0
   m_Name: Machine gun
@@ -3213,17 +3212,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   profile: {fileID: 11400000, guid: e024ebc3801f2f54dbf64c745ef3e889, type: 2}
---- !u!114 &114542700527171704
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1142408797990338}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 570bc10e5c4248740855ffde6d94608c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &114666188567029006
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3246,7 +3234,7 @@ MonoBehaviour:
     type: 2}
   enemyImpact: {fileID: 1009492330080514, guid: 25beaa7beb8bd564a8c1362fe4529843,
     type: 2}
-  swingRate: 1.3
+  swingRate: 0.7
 --- !u!114 &114713553502084302
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3260,7 +3248,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 50
   range: 15
-  fireRate: 1
+  fireRate: 0.6
   myLayerMask:
     serializedVersion: 2
     m_Bits: 1335
