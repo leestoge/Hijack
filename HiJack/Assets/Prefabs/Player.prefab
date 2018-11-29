@@ -200,9 +200,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4056991725653154}
-  - component: {fileID: 114470692884364432}
   - component: {fileID: 95031673075299732}
   - component: {fileID: 114542700527171704}
+  - component: {fileID: 114284148409240966}
   m_Layer: 0
   m_Name: Machine gun
   m_TagString: Untagged
@@ -3081,6 +3081,31 @@ MonoBehaviour:
   bleed: {fileID: 198452945920350368}
   gameOverPanel: {fileID: 0}
   currentHealth: 0
+--- !u!114 &114284148409240966
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1142408797990338}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1cce3ff083a47bf4593ae35202854566, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 5
+  range: 50
+  fireRate: 10
+  myLayerMask:
+    serializedVersion: 2
+    m_Bits: 1335
+  playerAnim: {fileID: 95031673075299732}
+  fpsCam: {fileID: 20914041526514020}
+  muzzleflash: {fileID: 198661245809165544}
+  enviornmentImpact: {fileID: 1000010844420130, guid: 4edabb1c0dde62743b137378c7d22980,
+    type: 2}
+  enemyImpact: {fileID: 1009492330080514, guid: 25beaa7beb8bd564a8c1362fe4529843,
+    type: 2}
+  Gunshot: {fileID: 1780029824811016, guid: adac7961fc805a344a49fb88e6b5e837, type: 2}
 --- !u!114 &114350692203319294
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3188,30 +3213,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   profile: {fileID: 11400000, guid: e024ebc3801f2f54dbf64c745ef3e889, type: 2}
---- !u!114 &114470692884364432
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1142408797990338}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ba85155f9b5e734ba0e0a95b13dd62a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 5
-  range: 50
-  fireRate: 10
-  myLayerMask:
-    serializedVersion: 2
-    m_Bits: 311
-  playerAnim: {fileID: 95031673075299732}
-  fpsCam: {fileID: 20914041526514020}
-  muzzleflash: {fileID: 198661245809165544}
-  enviornmentImpact: {fileID: 1000010844420130, guid: 4edabb1c0dde62743b137378c7d22980,
-    type: 2}
-  enemyImpact: {fileID: 1009492330080514, guid: 25beaa7beb8bd564a8c1362fe4529843,
-    type: 2}
 --- !u!114 &114542700527171704
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3262,7 +3263,7 @@ MonoBehaviour:
   fireRate: 1
   myLayerMask:
     serializedVersion: 2
-    m_Bits: 311
+    m_Bits: 1335
   playerAnim: {fileID: 95876457862147012}
   fpsCam: {fileID: 20914041526514020}
   muzzleflash: {fileID: 198824524399813870}
