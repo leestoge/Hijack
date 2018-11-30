@@ -12,6 +12,7 @@ public class MachineGun : MonoBehaviour
 
     public Camera fpsCam;
     public ParticleSystem muzzleflash;
+    public ParticleSystem ejectShell;
     public GameObject enviornmentImpact;
     public GameObject enemyImpact;
     public GameObject Gunshot;
@@ -37,6 +38,7 @@ public class MachineGun : MonoBehaviour
     {
         playerAnim.SetTrigger("shoot");
         muzzleflash.Play();
+        ejectShell.Play();
         RaycastHit hitInfo;
         if (Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hitInfo, range, myLayerMask))
         {
