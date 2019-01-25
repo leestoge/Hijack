@@ -1,3 +1,4 @@
+using MinAttribute = UnityEngine.PostProcessing.MinAttribute;
 using UnityEngine;
 using UnityEngine.PostProcessing;
 
