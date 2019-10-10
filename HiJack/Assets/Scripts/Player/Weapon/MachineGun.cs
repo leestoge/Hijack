@@ -1,9 +1,12 @@
-﻿using UnityEngine;
+﻿using DG.Tweening;
+using UnityEngine;
 
 public class MachineGun : MonoBehaviour
 {
 
 #region Variables
+
+    public Transform gunModel;
     public float damage = 5f;
     public float range = 50f;
     public float fireRate = 10f;
@@ -20,6 +23,14 @@ public class MachineGun : MonoBehaviour
     private float nextTimeToFire;
     private int framesBeforeNextShot; // to delay the sound to fix lag increment this
     private int currentShotFrame;
+
+    [Space]
+
+    public float punchStrenght = .2f;
+    public int punchVibrato = 5;
+    public float punchDuration = .3f;
+    [Range(0, 1)]
+    public float punchElasticity = .5f;
     #endregion
 
     // Update is called once per frame
@@ -37,6 +48,8 @@ public class MachineGun : MonoBehaviour
     void Shoot()
     {
         playerAnim.SetTrigger("shoot");
+        gunModel.DOComplete();
+        gunModel.DOPunchPosition(new Vector3(0, 0, -punchStrenght), punchDuration, punchVibrato, punchElasticity);
         muzzleflash.Play();
         ejectShell.Play();
         RaycastHit hitInfo;

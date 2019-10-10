@@ -1,7 +1,9 @@
-﻿using UnityEngine;
+﻿using DG.Tweening;
+using UnityEngine;
 
 public class Gun : MonoBehaviour
 {
+    public Transform shotgunModel;
     public float damage;
     public float range;
     public float fireRate;
@@ -15,9 +17,17 @@ public class Gun : MonoBehaviour
 
     private float nextTimeToFire;
 
+    [Space]
 
-	// Update is called once per frame
-	void Update ()
+    public float punchStrenght = .2f;
+    public int punchVibrato = 5;
+    public float punchDuration = .3f;
+    [Range(0, 1)]
+    public float punchElasticity = .5f;
+
+
+    // Update is called once per frame
+    void Update ()
 	{
         playerAnim = GetComponent<Animator>();
 
@@ -31,6 +41,8 @@ public class Gun : MonoBehaviour
     void Shoot()
     {
         playerAnim.SetTrigger("shoot");
+        shotgunModel.DOComplete();
+        shotgunModel.DOPunchPosition(new Vector3(0, 0, -punchStrenght), punchDuration, punchVibrato, punchElasticity);
         muzzleflash.Play();
         RaycastHit hitInfo;
         if (Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hitInfo, range, myLayerMask))
